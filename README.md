@@ -87,3 +87,9 @@ Baseline Scoring: Performed Tenfold Cross-Validation on the base model to assess
 Performance Metrics: Automated the evaluation process using Scikit-learn’s accuracy_score, classification_report, and confusion_matrix.
 
 ![Algorithm Fitting and Evaluation](algorithm-fitting-eval.png)
+
+Results
+
+After executing the above script the following results were obtained:
+
+![Results](results.png)
