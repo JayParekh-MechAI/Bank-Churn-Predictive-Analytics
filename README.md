@@ -90,6 +90,13 @@ Performance Metrics: Automated the evaluation process using Scikit-learn’s acc
 
 Results
 
-After executing the above script the following results were obtained:
+After executing the above script the results were obtained as shown.
 
 ![Results](results.png)
+
+Key Results
+Accuracy: The model achieved an initial accuracy of 95.31% on the test set.
+
+Predictive Success: Out of 2,026 test cases, the classifier correctly identified 1,931 outcomes (1,695 true positives and 236 true negatives).
+
+Confusion Matrix Visualization: Generated a heatmap for the confusion matrix to provide a clear visual representation of the model's precision and recall across both classes.
