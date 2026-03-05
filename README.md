@@ -54,6 +54,10 @@ Demographic Impact: Evaluated Gender, Income_Category, and Marital_Status using 
 
 ![Correlation Heatmap](correlation-heatmap.png)
 
+<div style="background-color: white; padding: 10px; display: inline-block;">
+  <img src="correlation-heatmap.png" alt="Correlation Heatmap">
+</div>
+
 ![Label Distribution](label-distribution.png)
 
 ![Transaction Amounts](transaction-amount.png)
