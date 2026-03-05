@@ -75,6 +75,7 @@ Train-Test Split: Sliced the data into training and testing sets using a 80/20 s
 ![Data Slicing](data-slicing.png)
 
 Machine Learning Implementation & Evaluation
+
 After finalizing the feature engineering, I implemented and evaluated a Random Forest Classifier to predict customer churn. Random Forest was selected for its robustness against data imbalance and its ability to rank feature importance.
 
 Model Training & Benchmarking
