@@ -37,3 +37,17 @@ One-Hot Encoding: Used pd.get_dummies for nominal variables like Gender and Mari
 Data Integration: Concatenated the newly encoded features back into the primary dataframe and removed the original text columns to finalize the feature set.
 
 ![Feature Engineering & Categorical Encoding Step](feature-encoding.png)
+
+Exploratory Data Analysis (EDA) & Visualization
+
+To understand the underlying drivers of churn, I utilized Seaborn and Matplotlib to visualize correlations and distributions across the 10,000+ customer records.
+
+Correlation Heatmap: Generated a comprehensive heatmap to identify strong associations, such as the relationship between Credit_Limit and Avg_Open_To_Buy.
+
+Feature Distributions: Plotted histograms for all variables to identify skewness. While Age showed a unimodal distribution, features like Total_Trans_Amt exhibited left-skewed multimodal patterns.
+
+Churn Drivers (Box Plots): Analyzed the impact of transactional behavior on attrition. The analysis revealed a consistent pattern: customers with low average utilization ratios and low transaction counts/amounts were at the highest risk of leaving the bank.
+
+Demographic Impact: Evaluated Gender, Income_Category, and Marital_Status using count plots. Findings indicated that customers earning less than $40K annually and those with three or fewer dependents were key attrition segments.
+
+![Exploratory Data Analysis (EDA) & Visualization Step](exploratory-data-analysis.png)
