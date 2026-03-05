@@ -51,3 +51,14 @@ Churn Drivers (Box Plots): Analyzed the impact of transactional behavior on attr
 Demographic Impact: Evaluated Gender, Income_Category, and Marital_Status using count plots. Findings indicated that customers earning less than $40K annually and those with three or fewer dependents were key attrition segments.
 
 ![Exploratory Data Analysis (EDA) & Visualization Step](exploratory-data-analysis.png)
+
+![Correlation Heatmap](correlation-heatmap.png)
+
+![Label Distribution](label-distribution.png)
+
+![Transaction Amounts](transaction-amount.png)
+
+![Transaction Counts](transaction-count.png)
+
+![Demographic Impact](demographic-impact.png)
+
