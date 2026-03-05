@@ -100,3 +100,49 @@ Accuracy: The model achieved an initial accuracy of 95.31% on the test set.
 Predictive Success: Out of 2,026 test cases, the classifier correctly identified 1,931 outcomes (1,695 true positives and 236 true negatives).
 
 Confusion Matrix Visualization: Generated a heatmap for the confusion matrix to provide a clear visual representation of the model's precision and recall across both classes.
+
+![Confusion Matrix Heatmap](conf-matrix.png)
+
+Feature Importance & Business Insights
+
+A primary objective of this project was to determine which variables most heavily influence a customer's decision to leave the bank. Using the Random Forest algorithm's native capability to rank features, I extracted the top 10 indicators of churn.
+
+Identifying Key Drivers: Utilized the .feature_importances_ attribute to quantify the impact of each variable on the model's predictive accuracy.
+
+![Key Features Code](keyfeatures-code.png)
+
+Visualization: Transformed the feature importance data into a Horizontal Bar Chart using nlargest(10).plot(kind='barh') to provide a clear, rank-ordered view of churn drivers.
+
+![Key Features Results](keyfeatures-results.png)
+
+Analytical Results
+
+The analysis identified the top three characteristics influencing bank turnover as:
+
+Total Transaction Amount: The most significant predictor of churn.
+
+Total Transaction Count: Frequency of account use was highly correlated with retention.
+
+Total Revolving Balance: Customers maintaining lower balances showed a higher propensity for attrition.
+
+Feature Importance & Business Insights
+
+A primary objective of this project was to determine which variables most heavily influence a customer's decision to leave the bank. Using the Random Forest algorithm's native capability to rank features, I extracted the top 10 indicators of churn.
+
+Identifying Key Drivers: Utilized the .feature_importances_ attribute to quantify the impact of each variable on the model's predictive accuracy.
+
+Visualization: Transformed the feature importance data into a Horizontal Bar Chart using nlargest(10).plot(kind='barh') to provide a clear, rank-ordered view of churn drivers.
+
+Analytical Results
+
+The analysis identified the top three characteristics influencing bank turnover as:
+
+Total Transaction Amount: The most significant predictor of churn.
+
+Total Transaction Count: Frequency of account use was highly correlated with retention.
+
+Total Revolving Balance: Customers maintaining lower balances showed a higher propensity for attrition.
+
+Conclusion & Recommendations
+
+Based on these findings, it is recommended that the bank focus its CRM efforts on high-value customers who frequently perform sizable transactions. These regular users represent the highest risk for attrition if their engagement levels drop.
