@@ -62,3 +62,27 @@ Demographic Impact: Evaluated Gender, Income_Category, and Marital_Status using 
 
 ![Demographic Impact](demographic-impact.png)
 
+Data Slicing & Feature Scaling
+
+To ensure the machine learning models could generalize to new data, I implemented a rigorous data preparation pipeline:
+
+Feature/Label Isolation: Separated the target variable (Attrited Customer) from the feature set to create the X and y arrays.
+
+Feature Scaling: Implemented StandardScaler to normalize the feature set. This ensures that features with larger numerical ranges (like Credit_Limit) do not disproportionately influence the model compared to smaller ranges.
+
+Train-Test Split: Sliced the data into training and testing sets using a 80/20 split. I utilized a random_state of 0 to ensure the results are reproducible across different runs.
+
+![Data Slicing](data-slicing.png)
+
+Machine Learning Implementation & Evaluation
+After finalizing the feature engineering, I implemented and evaluated a Random Forest Classifier to predict customer churn. Random Forest was selected for its robustness against data imbalance and its ability to rank feature importance.
+
+Model Training & Benchmarking
+
+Algorithm Selection: Built the primary model using the RandomForestClassifier with a random_state of 0 to ensure consistent results.
+
+Baseline Scoring: Performed Tenfold Cross-Validation on the base model to assess variance and reliability across different subsets of the data.
+
+Performance Metrics: Automated the evaluation process using Scikit-learn’s accuracy_score, classification_report, and confusion_matrix.
+
+![Algorithm Fitting and Evaluation](algorithm-fitting-eval.png)
