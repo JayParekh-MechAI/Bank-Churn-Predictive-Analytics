@@ -129,4 +129,4 @@ The comparative results confirm that while the Decision Tree is effective, the *
 
 **Recommendation:** The bank should focus CRM efforts on high-value customers who frequently perform sizable transactions. These regular users represent the highest risk for attrition if their engagement levels drop.
 
-Full project available at [Bank Churn.docx](Bank-Churn.docx)
+Full project available at [Bank Churn.docx](Bank%20Churn.docx)
