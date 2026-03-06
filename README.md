@@ -143,6 +143,42 @@ Total Transaction Count: Frequency of account use was highly correlated with ret
 
 Total Revolving Balance: Customers maintaining lower balances showed a higher propensity for attrition.
 
+Comparative Analysis: Decision Tree Classifier
+
+In addition to the Random Forest model, I implemented a Decision Tree Classifier to serve as a baseline for performance comparison.
+
+Decision Tree Implementation & Performance
+Model Configuration: Initialized the DecisionTreeClassifier with default parameters to establish a performance floor.
+
+Accuracy Score: The Decision Tree achieved a strong accuracy of 93.83%, slightly lower than the Random Forest's 95.31%.
+
+Validation: Performed Tenfold Cross-Validation, which showed higher variance in scores compared to the ensemble method.
+
+![Decision Tree Fitting and Evaluation](decision-tree.png)
+
+Decision Tree Evaluation Metrics
+
+Confusion Matrix: Correctively predicted 1,658 non-churning and 243 churning customers, with a slightly higher rate of false positives (59) and false negatives (66) than the Random Forest model.
+
+![Decision Tree Confusion Matrix](dt-conf-matrix.png)
+
+Classification Report: Achieved a weighted average F1-score of 0.94, showing strong predictive power but confirming the Random Forest as the superior model for this specific dataset.
+
+![Decision Tree Results](dt-results.png)
+
+Decision Tree Feature Importance
+Top Predictors: Similar to the Random Forest, the Decision Tree identified Total Transaction Count and Total Revolving Balance as the most critical features for identifying potential churn.
+
+![Decision Tree Key Features](dt-keyfeatures.png)
+
+Comparative Results
+
+Accuracy Score: The Decision Tree achieved an accuracy of 93.83%, confirming that while effective, it was outperformed by the Random Forest's 95.31%.
+
+Predictive Performance: The model correctly identified 1,901 outcomes but showed a higher rate of false positives and negatives compared to the Random Forest.
+
+Feature Consistency: Both models independently identified Total Transaction Count and Total Revolving Balance as the primary drivers of customer churn.
+
 Conclusion & Recommendations
 
 Based on these findings, it is recommended that the bank focus its CRM efforts on high-value customers who frequently perform sizable transactions. These regular users represent the highest risk for attrition if their engagement levels drop.
