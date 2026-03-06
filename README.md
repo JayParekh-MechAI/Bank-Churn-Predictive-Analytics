@@ -128,3 +128,5 @@ I implemented a **Decision Tree Classifier** as a baseline for performance compa
 The comparative results confirm that while the Decision Tree is effective, the **Random Forest** provides superior accuracy and stability for this dataset. Both models consistently identified transaction count and revolving balance as the primary churn drivers.
 
 **Recommendation:** The bank should focus CRM efforts on high-value customers who frequently perform sizable transactions. These regular users represent the highest risk for attrition if their engagement levels drop.
+
+Full project available at [Bank Churn.docx](Bank-Churn.docx)
