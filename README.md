@@ -50,14 +50,16 @@ To understand the underlying drivers of churn, I utilized **Seaborn** and **Matp
 ![Exploratory Data Analysis (EDA) & Visualization Step](exploratory-data-analysis.png)
 
 ### EDA Gallery
-| Heatmap | Label Distribution |
+
+| Correlation Heatmap | Label Distribution |
 | :---: | :---: |
-| ![Correlation Heatmap](correlation-heatmap.png) | ![Label Distribution](label-distribution.png) |
+| <img src="correlation-heatmap.png" width="400" style="background-color:white;"> | <img src="label-distribution.png" width="400" style="background-color:white;"> |
+| *Identifying strong associations between features* | *Visualizing the 5.25:1 data imbalance* |
 
 | Transaction Amounts | Transaction Counts | Demographic Impact |
 | :---: | :---: | :---: |
-| ![Transaction Amounts](transaction-amount.png) | ![Transaction Counts](transaction-count.png) | ![Demographic Impact](demographic-impact.png) |
-
+| <img src="transaction-amount.png" width="300" style="background-color:white;"> | <img src="transaction-count.png" width="300" style="background-color:white;"> | <img src="demographic-impact.png" width="300" style="background-color:white;"> |
+| *Total Transaction Amounts* | *Total Transaction Counts* | *Impact of Gender/Income* |
 ---
 
 ## 📏 Data Slicing & Feature Scaling
